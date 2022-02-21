@@ -1,0 +1,9 @@
+ext {
+    publishConfig = [
+            gitHubPackagesName          : "GitHubPackages",
+            gitHubPackagesUrl           : "https://maven.pkg.github.com/codequest-eu/moshi-jsonapi",
+            
+            groupId                     : "com.codequest.moshi-jsonapi",
+            version                     : "3.5.2"
+    ]
+}
