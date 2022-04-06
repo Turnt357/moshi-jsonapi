@@ -229,7 +229,14 @@ For moshi-jsonapi:
 
 ```
 -keepattributes Signature
--keepclassmembers public abstract class moe.banana.jsonapi2.** {
+-keepclassmembers class moe.banana.jsonapi2.** {
+    *;
+}
+```
+
+Additional fix for not obfuscating any jsonapi objects implemented in DTOs as fields:
+```
+-keepclassmembers class * extends moe.banana.jsonapi2.** {
     *;
 }
 ```
